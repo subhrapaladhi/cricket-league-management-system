@@ -1,48 +1,13 @@
-/*
-/*----------------------- team table ------------------------
-
-insert into team values(
-    1,'rcb',9003814273,
-    'rcb hq bangalore',
-    'bangalore'
-);
-
-insert into team values(
-    2,'csk',9458059340,
-    'csk hq chennai',
-    'csk'
-);
-
-insert into team values(
-    3,'mi',7317681795,
-    'mi hq mumbai',
-    'mumbai'
-);
-
-insert into team values(
-    4,'kkr',7535009447,
-    'kkr hq kolkata',
-    'kolkata'
-);
-
-insert into team values(
-    5,'rr',9004814276,
-    'rr hq jaipur',
-    'jaipur'
-);
-*/
-
-/*----------------------- team table ------------------------
-insert into Player values(
-    1,'Rohit Sharma',1,
-    '12-APR-2008','14-MAR-1986',
-    36,65,15,30,
-    264,30,22,
-    '24-OCT-2020'
-);
+----------------------- team table ------------------------
+insert into team values(    1,'rcb',9003814273,    'rcb hq bangalore',    'bangalore');
+insert into team values(    2,'csk',9458059340,    'csk hq chennai',    'csk');
+insert into team values(    3,'mi',7317681795,    'mi hq mumbai',    'mumbai');
+insert into team values(    4,'kkr',7535009447,    'kkr hq kolkata',    'kolkata');
+insert into team values(    5,'rr',9004814276,    'rr hq jaipur',    'jaipur');
 
 
-
+----------------------- team table ------------------------
+insert into Player values(1,'Rohit Sharma',1,'12-APR-2008','14-MAR-1986',36,65,15,30, 264,30,22,'24-OCT-2020');
 insert into Player values(2,'Virat Kohli',1,'23-MAY-2012','22-APR-1990',30,45,7,8,134,20,8,NULL);
 insert into Player values(3,'Ab deVillars',1,'23-JUN-2006','18-MAY-1988',32,35,5,12,167,22,9,'20-AUG-2018');
 insert into Player values(4,'MS Dhoni',2,'11-MAR-2004','10-JUN-1991',29,25,2,3,129,15,2,'21-OCT-2019');
@@ -59,28 +24,15 @@ insert into Player values(15,'Sunil Narine',5,'19-APR-2011','23-SEP-1992',28,15,
 insert into Player values(6,'Shaun Tait',2,'8-JUL-2008','30-SEP-1986',34,5,NULL,1,34,11,93,'15-JAN-2019');
 
 
-/*-------------------- league table --------------------------
+------------------------ league table --------------------------
+insert into leagues values(1, 'India');
+insert into leagues values(2, 'Australia');
+insert into leagues values(3, 'England');
+insert into leagues values(4, 'South Africa');
+insert into leagues values(5, 'West indies');
 
 
-insert into leagues values(
-    1, 'India'
-);
-insert into leagues values(
-    2, 'Australia'
-);
-insert into leagues values(
-    3, 'England'
-);
-insert into leagues values(
-    4, 'South Africa'
-);
-
-insert into leagues values(
-    5, 'West indies'
-);
-
-
-/* ---------------------------- plays table -------------------------
+---------------------------- plays table -------------------------
 create table plays as ( select player.player_id,leagues.league_id from player,leagues);
 
 delete from plays
@@ -92,125 +44,25 @@ delete from plays
     and league_id in(4,2);
 
 
-
-insert into contract values(
-    1,1,
-    50000000,
-    '15-JUL-2014',
-    '23-SEP-2020'
-)
-
-
-insert into contract values(
-    2,2,
-    40000000,
-    '12-APR-2016',
-    '16-JUL-2020'
-);
-
-
-insert into contract values(
-    3,3,
-    15000000,
-    '29-DEC-2015',
-    '04-SEP-2018'
-);
-
-insert into contract values(
-    3,3,
-    35000000,
-    '01-OCT-2015',
-    '04-APR-2020'
-);
-
-insert into contract values(
-    4,4,
-    5000000,
-    '11-APR-2014',
-    '23-NOV-2019'
-);
-
-insert into contract values(
-    5,5,
-    4000000,
-    '06-APR-2014',
-    '09-SEP-2020'
-);
-
-insert into contract values(
-    6,6,
-    6000000,
-    '21-APR-2014',
-    '14-FEB-2019'
-);
+---------------------------- contract table -------------------------
+insert into contract values(    1,1,    50000000,   '15-JUL-2014',  '23-SEP-2020');
+insert into contract values(    2,2,    40000000,   '12-APR-2016',  '16-JUL-2020');
+insert into contract values(    3,3,    15000000,   '29-DEC-2015',  '04-SEP-2018');
+insert into contract values(    4,4,    5000000,    '11-APR-2014',  '23-NOV-2019');
+insert into contract values(    5,5,    4000000,    '06-APR-2014',  '09-SEP-2020');
+insert into contract values(    6,6,    6000000,    '21-APR-2014',  '14-FEB-2019');
+insert into contract values(    7,7,    7000000,    '20-APR-2015',    '15-SEP-2020');
+insert into contract values(    8,8,    9000000,    '12-MAR-2014',    '23-AUG-2020');
+insert into contract values(    9,9,    17000000,    '21-JUL-2013',    '11-FEB-2019');
+insert into contract values(    10,10,    4000000,    '23-JAN-2015',    '02-MAY-2019');
+insert into contract values(    11,11,    40000000,    '20-MAY-2015',    '15-OCT-2020');
+insert into contract values(    12,12,    1230000,    '14-MAY-2014',    '19-SEP-2020');
+insert into contract values(    13,13,    3000000,    '20-APR-2014',    '04-MAY-2017');
+insert into contract values(    14,14,    5000000,    '23-APR-2014',    '02-JUL-2018');
+insert into contract values(    15,15,    5000000,    '13-MAR-2014',    '28-SEP-2018');
 
 
-insert into contract values(
-    7,7,
-    7000000,
-    '20-APR-2015',
-    '15-SEP-2020'
-);
-
-insert into contract values(
-    8,8,
-    9000000,
-    '12-MAR-2014',
-    '23-AUG-2020'
-);
-
-insert into contract values(
-    9,9,
-    17000000,
-    '21-JUL-2013',
-    '11-FEB-2019'
-);
-
-insert into contract values(
-    10,10,
-    4000000,
-    '23-JAN-2015',
-    '02-MAY-2019'
-);
-
-insert into contract values(
-    11,11,
-    40000000,
-    '20-MAY-2015',
-    '15-OCT-2020'
-);
-
-insert into contract values(
-    12,12,
-    1230000,
-    '14-MAY-2014',
-    '19-SEP-2020'
-);
-
-insert into contract values(
-    13,13,
-    3000000,
-    '20-APR-2014',
-    '04-MAY-2017'
-);
-
-insert into contract values(
-    14,14,
-    5000000,
-    '23-APR-2014',
-    '02-JUL-2018'
-);
-
-
-insert into contract values(
-    15,15,
-    5000000,
-    '13-MAR-2014',
-    '28-SEP-2018'
-);
-
-
-/* --------------------- ranking table -------------------------
+------------------- ranking table -------------------------
 
 insert into ranking values('batsman',1,2);
 insert into ranking values('batsman',2,1);
@@ -234,14 +86,14 @@ insert into ranking values('batsman',15,44);
 insert into ranking values('bowler',5,32);
 
 
-/* ------------------- stadium table ----------------------
+------------------- stadium table ----------------------
 insert into stadium values('chinnaswamy',55000,'bengaluru');
 insert into stadium values('wankhede',70000,'mumbai');
 insert into stadium values('eden garden',60000,'kolkata');
 insert into stadium values('chepak',65000,'chennai');
 insert into stadium values('sawai madhao',50000,'jaipur');
 
-
+---------------------------- match table -------------------------
 insert into match values(1,2,1,'chinnaswamy','virat',1,121);
 insert into match values(2,1,1,'chepak','ab devillers',2,111);
 insert into match values(2,3,2,'chepak','ms dhoni',3,98);
@@ -253,10 +105,8 @@ insert into match values(5,4,4,'sawai madhao','sunil narine',8,96);
 insert into match values(1,5,1,'chinnaswamy','virat kohli',9,126);
 insert into match values(5,1,5,'sawai madhao','jofra archer',10,158);
 
-
-/* -------------------- participate table -----------------------
-create table participate as( select h_team_id "team_id",match_id from match 
-    union
-                        select a_team_id "team_id",match_id from match )
-
-*/
+-------------------- participate table -----------------------
+create table participate as(   
+    select h_team_id "team_id",match_id from match 
+union
+    select a_team_id "team_id",match_id from match )
