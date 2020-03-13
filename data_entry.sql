@@ -32,18 +32,6 @@ insert into leagues values(4, 'South Africa');
 insert into leagues values(5, 'West indies');
 
 
----------------------------- plays table -------------------------
-create table plays as ( select player.player_id,leagues.league_id from player,leagues);
-
-delete from plays
-    where player_id in (1,3,5,7,9,11)
-    and league_id in(1,3,5);
-
-delete from plays
-    where player_id in (2,14,15)
-    and league_id in(4,2);
-
-
 ---------------------------- contract table -------------------------
 insert into contract values(    1,1,    50000000,   '15-JUL-2014',  '23-SEP-2020');
 insert into contract values(    2,2,    40000000,   '12-APR-2016',  '16-JUL-2020');
@@ -105,8 +93,45 @@ insert into match values(5,4,4,'sawai madhao','sunil narine',8,96);
 insert into match values(1,5,1,'chinnaswamy','virat kohli',9,126);
 insert into match values(5,1,5,'sawai madhao','jofra archer',10,158);
 
--------------------- participate table -----------------------
-create table participate as(   
-    select h_team_id "team_id",match_id from match 
-union
-    select a_team_id "team_id",match_id from match )
+------------------- commentator table -----------------------
+insert into commentator values('ravi shastri',1,1);
+insert into commentator values('akash chopra',2,2);
+insert into commentator values('vivek dahiya',3,3);
+insert into commentator values('navjot singh siddhu',4,4);
+insert into commentator values('harsha bhogle',5,5);
+
+------------------- coach table -----------------------
+insert into coach values('sanjay bangar','indian',1,1);
+insert into coach values('justin langer','australian',2,2);
+insert into coach values('mike hesson','new zeland',3,3);
+insert into coach values('ottis gibson','west indian',4,4);
+insert into coach values('gary kristen','south african',5,5);
+
+------------------- umpire table -----------------------
+insert into umpire values(1,'ian gould',72);
+insert into umpire values(2,'Nigel Long',89);
+insert into umpire values(3,'Rod Tucker',16);
+insert into umpire values(4,'kumar dharamsena',56);
+insert into umpire values(5,'chris gaffaney',65);
+
+------------------- officiating table -----------------------
+insert into officiating values(1,1);
+insert into officiating values(2,1);
+insert into officiating values(3,2);
+insert into officiating values(4,2);
+insert into officiating values(5,3);
+insert into officiating values(1,3);
+insert into officiating values(2,4);
+insert into officiating values(3,4);
+insert into officiating values(4,5);
+insert into officiating values(5,5);
+insert into officiating values(2,6);
+insert into officiating values(3,6);
+insert into officiating values(4,7);
+insert into officiating values(5,7);
+insert into officiating values(1,8);
+insert into officiating values(2,8);
+insert into officiating values(3,9);
+insert into officiating values(4,9);
+insert into officiating values(5,10);
+insert into officiating values(1,10);
