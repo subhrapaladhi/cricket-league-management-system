@@ -9,7 +9,7 @@ create table team(
 
 
 
-create table Player(
+create table player(
     player_id number(5),
     name varchar2(20),
     team_id number(5),
