@@ -32,7 +32,6 @@ create table Player(
 create table leagues(
     league_id number(5) not null,
     country varchar2(3),
-    league_contract varchar2(20),
     CONSTRAINT pk_leagues PRIMARY KEY(league_id)
 );
 

@@ -1,5 +1,6 @@
 CREATE or REPLACE PROCEDURE get_player_city
-as CURSOR cur is SELECT team_id, name from player;
+as 
+CURSOR cur is SELECT team_id, name from player;
 team_id_i player.team_id%type;
 player_name player.name%type;
 n VARCHAR2(20);
@@ -23,7 +24,7 @@ BEGIN
     end if;
     dbms_output.put_line(n||' '||player_name);
     end loop;
-CLOSE cur;
+    CLOSE cur;
 end;
 
 set serveroutput on;
