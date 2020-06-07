@@ -1,3 +1,5 @@
+-- This function prints the average age of player for each team
+
 create or replace function team_players_avg_age return varchar
 as
 cursor team_entry is select team_id from team;

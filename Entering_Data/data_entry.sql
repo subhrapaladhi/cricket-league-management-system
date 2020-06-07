@@ -6,7 +6,7 @@ insert into team values(    4,'kkr',7535009447,    'kkr hq kolkata',    'kolkata
 insert into team values(    5,'rr',9004814276,    'rr hq jaipur',    'jaipur');
 
 
------------------------ team table ------------------------
+----------------------- player table ------------------------
 insert into Player values(1,'Rohit Sharma',1,'12-APR-2008','14-MAR-1986',36,65,15,30, 264,30,22,'24-OCT-2020');
 insert into Player values(2,'Virat Kohli',1,'23-MAY-2012','22-APR-1990',30,45,7,8,134,20,8,NULL);
 insert into Player values(3,'Ab deVillars',1,'23-JUN-2006','18-MAY-1988',32,35,5,12,167,22,9,'20-AUG-2018');

@@ -1,3 +1,5 @@
+-- This procedure is used to get the number of matches each umpire has officated
+
 CREATE or REPLACE PROCEDURE umpire_officated_count
 as
 CURSOR i is SELECT u_id, u_name FROM umpire;

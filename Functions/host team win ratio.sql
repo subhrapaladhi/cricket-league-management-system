@@ -1,3 +1,5 @@
+-- This function returns the ratio of matches that host team has won
+
 CREATE or REPLACE FUNCTION get_host_team_win_ratio RETURN number
 as 
 CURSOR cur is SELECT h_team_id, win_team_id from match;

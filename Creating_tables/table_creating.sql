@@ -160,7 +160,3 @@ create table officiating(
     constraint fk_umpire foreign key(u_id) references umpire(u_id),
     constraint fk_match foreign key(match_id) references match(match_id)
 );
-
-
-
-

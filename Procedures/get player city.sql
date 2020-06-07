@@ -1,3 +1,5 @@
+-- This procedure is used to get the city the player plays for
+
 CREATE or REPLACE PROCEDURE get_player_city
 as 
 CURSOR cur is SELECT team_id, name from player;
